@@ -102,7 +102,7 @@
 // Symbol (Cashtag)
 //
 
-#define TWUSymbol               @"[a-z]{1,6}(?:[._][a-z]{1,2})?"
+#define TWUSymbol               @"([A-Za-z1-9]{1}[A-Za-z]{1,3}_F|(?!\d+[bmkts]{1}?(il(lion)?|ln|m|n)?\b|[\d]+\b)(?!\d+usd)[A-Za-z0-9]{1,14}(?:[-.]{1}[A-Za-z]{1,3})?(?:[-.]{1}[A-Za-z]{1,3})?)(\b(?!\$))?"
 #define TWUValidSymbol \
     @"(?:^|[" TWUUnicodeSpaces TWUUnicodeDirectionalCharacters @"])" \
     @"(\\$" TWUSymbol @")" \
